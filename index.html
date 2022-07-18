@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>新墮落之鄉</title>
+
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        .bg-gradient {
+            background-image: var(--bs-gradient);
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        #video_cover {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('image/page1.png') no-repeat;
+            display: none;
+            background-color: black;
+            background-size: cover;
+            background-position: center;
+        }
+        /* Demo page specific styles */
+    </style>
+</head>
+
+
+<body class="bg-dark text-white">
+
+
+    <!-- 網頁開場 -->
+    <div id="container">
+        <div id="video_cover">
+
+        </div>
+
+        <div class="container">
+
+            <div id="code">
+                <span />墮落之鄉,創立於2017年4月因某些原因於2019年2月關閉</span><br />
+                <span />就在今年2022年,伺服器RPG分流將重新開放!</br>
+                </span>
+
+            </div>
+            <button class="button--nanuk button--text-thick button--round-m button" data-text="Enter" id="enter">
+                <span>新</span><span>墮</span><span>落</span><span>之</span><span>鄉</span>
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- 網頁頂部 -->
+    <header class="before_display">
+        <nav class="navbar navbar-dark fixed-top bg-dark  bg-gradient">
+            <div class="container-fluid">
+                <div id="logo1" class="row">
+
+                    <div id="logo2" class="col-4">
+                        <a class="navbar-brand" href="#">
+                            <img src="image/fallen.png" width="125px">
+
+                            <span>
+								<img src="image/fallen.png" width="100%" />
+								<br>
+								<h5>墮落之鄉 Minecraft 伺服器</h5>
+							</span>
+
+                        </a>
+                    </div>
+                    <div id="logotext" class="col-8">
+                        <h5><br>墮落之鄉 Minecraft 伺服器</h5>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="RPG.html">RPG分流介紹</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="staff.html">開發人員</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main class="before_display" style="padding-top: 6%;">
+        <img class="mb-4" src="image/page2.png" width="100%" alt="">
+
+
+
+
+        <!-- link 區 -->
+
+        <div class="container py-2 mb-2 bg-gradient">
+            <div class=" row align-items-center">
+                <div class=" col d-flex align-items-left justify-content-center">
+                    <h2>首頁</h2>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center linkhover">
+                    <h2><a class="link-primary" href="RPG.html">RPG分流介紹</a></h2>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center linkhover">
+                    <h2><a class="link-primary" href="staff.html">開發人員</a></h2>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="container ">
+
+
+            <div class=" d-flex justify-content-center">
+                <a class="py-5" href="https://minecraft-mp.com/server-s298529" target="_blank"><img src="https://minecraft-mp.com/banner-298529.png" border="0"></a>
+
+            </div>
+
+
+
+            <div class=" d-flex justify-content-center">
+                <h3>伺服器IP</h3>
+            </div>
+            <div class="mb-4 d-flex justify-content-center" title="點擊可直接複製IP">
+                <h3 id="ip">fallenworld.vigorddns.com</h3>
+            </div>
+
+            <div class=" d-flex justify-content-center text-muted text-center" title="點擊可直接複製IP">
+                <h4><strong>墮落之鄉</strong>成立於2017年的4月,當時只是一時興起將伺服器發佈到論壇
+                    </br>沒想到卻吸引到很多玩家來遊玩,之後規模愈做愈大,在2018年的暑假
+                    </br>人數達到了95人,不過後來隨著網路攻擊頻繁人數也漸漸減少了..
+                    </br>2019年因某些原因伺服器關閉,打算大型改版後再次重新開啟,但隨著上大學
+                    </br>愈來愈忙便遲遲沒有重新開啟,預計今年會重新開啟!
+                </h4>
+            </div>
+
+
+
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-4">
+                    <h2 class="featurette-heading">武器技能特效</h2>
+                    <p class="lead text-muted">多達100種的武器技能,而每種技能都有獨特的效果 ! </br>
+
+                    </p>
+
+                </div>
+                <div class="col-md-8">
+                    <div id="myCarousel" class="p-md-4 p-5 container carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="image/pica1.png" target="_blank"><img class="imgread" src="image/pica1.png" width="100%"></a>
+                            </div>
+                            <div class="carousel-item ">
+                                <a href="image/pica2.png" target="_blank"><img class="imgread" src="image/pica2.png" width="100%"></a>
+                            </div>
+                            <div class="carousel-item ">
+                                <a href="image/pica3.png" target="_blank"><img class="imgread" src="image/pica3.png" width="100%"></a>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-4 order-md-2">
+                    <h2 class="featurette-heading">多種具有特色的武器 </h2>
+                    <p class="lead text-muted">上百種武器 ,每種都可以搭配不同的技能! </br>
+
+                    </p>
+                </div>
+                <div class="col-md-8 order-md-1">
+                    <div id="myCarousel1" class="p-md-4 p-5 container carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="image/picb1.png" target="_blank"><img class="imgread" src="image/picb1.png" width="100%"></a>
+                            </div>
+                            <div class="carousel-item ">
+                                <a href="image/picb2.png" target="_blank"><img class="imgread" src="image/picb2.png" width="100%"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="image/picb3.png" target="_blank"><img class="imgread" src="image/picb3.png" width="100%"></a>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette" style="height: 500px;">
+                <div class="col-md-4">
+                    <h2 class="featurette-heading">原創的武器升級系統</h2>
+
+                </div>
+                <div class="col-md-8">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/iqhxhHVK9rY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div>
+        <!-- /.container -->
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="container bg-dark text-white py-5">
+
+        <div class="row">
+            <div class="col-md-11">
+                <h4>加入我們
+                    <a href="https://www.facebook.com/gundam89412/?modal=admin_todo_tour"><img src="image/logo/fb.png" width="5%" alt=""></a>
+                    <a href="https://discord.gg/WQfNUMG"><img src="image/logo/dc.jfif" width="5%" alt=""></a>
+                </h4>
+
+            </div>
+            <div class="col-md-1">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                      </svg>
+                </a>
+            </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/typewriter.js"></script>
+    <script type="text/javascript">
+        if (sessionStorage.getItem('access')) {
+            $("#container").hide();
+            $(".before_display").show();
+            $("html").css("overflow", "auto");
+
+        } else {
+            document.getElementById("code").typewriter();
+            setTimeout(function() {
+                $("#code").slideUp(500);
+                $("#video_cover").fadeIn(2000);
+                $("#enter").fadeIn(3000);
+
+            }, 7500);
+            // container隐藏
+
+            $("#enter").click(function() {
+                $("#container").slideUp(500);
+                setTimeout(function() {
+                    sessionStorage.setItem('access', true); //刷新可略過開場
+                    $(".before_display").fadeIn('slow');
+                    $("html").css("overflow", "auto");
+                }, 300);
+
+            })
+        }
+
+        $("#ip").click(function() {
+            copyEvent("ip");
+
+        })
+
+
+
+
+
+
+        function copyEvent(id) {
+            var str = document.getElementById(id);
+            window.getSelection().selectAllChildren(str);
+            document.execCommand("Copy")
+        }
+    </script>
+</body>
+
+</html>
