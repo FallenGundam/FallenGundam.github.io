@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="google-site-verification" content="8Ttxlsc-s5rrdys9Ii5_5Wht-o1xWAxVylBVvAzDvmU" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
@@ -34,6 +33,9 @@
                 font-size: 3.5rem;
             }
         }
+        a {
+            text-decoration: none;
+        }
         
         #video_cover {
             position: absolute;
@@ -62,8 +64,8 @@
         <div class="container">
 
             <div id="code">
-                <span />墮落之鄉,創立於2017年4月因某些原因於2019年2月關閉</span><br />
-                <span />就在今年2022年,伺服器RPG分流將重新開放!</br>
+                <span >墮落之鄉，創立於2017年4月因某些原因於2019年2月關閉</span><br />
+                <span >現在，RPG分流已經開放測試!!!</br>
                 </span>
 
             </div>
@@ -77,40 +79,36 @@
 
     <!-- 網頁頂部 -->
     <header class="before_display">
-        <nav class="navbar navbar-dark fixed-top bg-dark  bg-gradient">
-            <div class="container-fluid">
-                <div id="logo1" class="row">
-
-                    <div id="logo2" class="col-4">
+        <nav class="navbar navbar-dark fixed-top bg-dark bg-gradient">
+            <div class="container-fluid" >
+                <div id="logo1" class="d-flex" style="height: 45px;">
+                    <div id="logo2" class="">
                         <a class="navbar-brand" href="#">
-                            <img src="image/fallen.png" width="125px">
-
+                            <img src="image/fallen.png" width="95px">
                             <span>
-								<img src="image/fallen.png" width="100%" />
-								<br>
-								<h5>墮落之鄉 Minecraft 伺服器</h5>
-							</span>
-
+                                <img src="image/fallen.png" class="w-100"/>
+                            </span>
                         </a>
                     </div>
-                    <div id="logotext" class="col-8">
-                        <h5><br>墮落之鄉 Minecraft 伺服器</h5>
+                    <div id="logotext" class="d-flex justify-content-center align-items-center">
+                        <h5>墮落之鄉 Minecraft 伺服器</h5>
                     </div>
                 </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">首頁</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="RPG.html">RPG分流介紹</a>
+                            <a class="nav-link" aria-current="page" href="RPG.html">RPG分流介紹</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="staff.html">開發人員</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">首頁</a>
                         </li>
                     </ul>
                 </div>
@@ -118,60 +116,50 @@
         </nav>
     </header>
 
+    
 
-
-    <main class="before_display" style="padding-top: 6%;">
+    <main class="before_display">
         <img class="mb-4" src="image/page2.png" width="100%" alt="">
 
 
-
-
-        <!-- link 區 -->
-
-        <div class="container py-2 mb-2 bg-gradient">
-            <div class=" row align-items-center">
-                <div class=" col d-flex align-items-left justify-content-center">
-                    <h2>首頁</h2>
-                </div>
-                <div class="col d-flex align-items-center justify-content-center linkhover">
-                    <h2><a class="link-primary" href="RPG.html">RPG分流介紹</a></h2>
-                </div>
-                <div class="col d-flex align-items-center justify-content-center linkhover">
-                    <h2><a class="link-primary" href="staff.html">開發人員</a></h2>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
         <div class="container ">
+            <!-- link 區 -->
 
-
-            <div class=" d-flex justify-content-center">
-                <a class="py-5" href="https://minecraft-mp.com/server-s298529" target="_blank"><img src="https://minecraft-mp.com/banner-298529.png" border="0"></a>
-
+            <div class=" py-2 mb-2 bg-gradient">
+                <div class=" row align-items-center">
+                    <div class=" col-md d-flex align-items-left justify-content-center linkhover">
+                        <h2>首頁</h2>
+                    </div>
+                    <div class="col-md d-flex align-items-center justify-content-center">
+                        <h2><a class="link-primary" href="RPG.html">RPG分流介紹</a></h2>
+                    </div>
+                    <div class="col-md d-flex align-items-center justify-content-center linkhover">
+                        <h2><a class="link-primary" href="staff.html">開發人員</a></h2>
+                    </div>
+                </div>
             </div>
 
 
 
-            <div class=" d-flex justify-content-center">
-                <h3>伺服器IP</h3>
-            </div>
-            <div class="mb-4 d-flex justify-content-center" title="點擊可直接複製IP">
-                <h3 id="ip">fallenworld.vigorddns.com</h3>
-            </div>
 
-            <div class=" d-flex justify-content-center text-muted text-center" title="點擊可直接複製IP">
-                <h4><strong>墮落之鄉</strong>成立於2017年的4月,當時只是一時興起將伺服器發佈到論壇
+
+            <div class="text-center m-5">
+                <a  href="https://www.mc-list.xyz/1399/info" target="_blank"><img src="https://image.mc-list.xyz/banner/1-1399.png" border="0"></a>
+
+                <h4 class="m-3">版本:&nbsp;JAVA 1.16.5 ~ 1.18.2</h4>
+       
+                <div class="d-flex align-items-center justify-content-center">
+                    <h3>IP:&nbsp;</h3>
+          
+                    <h3 id="ip" title="點擊可直接複製IP">fallenworld.vigorddns.com</h3>
+                </div>
+               
+
+                <h4 class="py-5 text-muted"><strong>墮落之鄉</strong>成立於2017年的4月,當時只是一時興起將伺服器發佈到論壇
                     </br>沒想到卻吸引到很多玩家來遊玩,之後規模愈做愈大,在2018年的暑假
                     </br>人數達到了95人,不過後來隨著網路攻擊頻繁人數也漸漸減少了..
                     </br>2019年因某些原因伺服器關閉,打算大型改版後再次重新開啟,但隨著上大學
                     </br>愈來愈忙便遲遲沒有重新開啟,預計今年會重新開啟!
-                </h4>
             </div>
 
 
@@ -290,7 +278,7 @@
 
         <div class="row">
             <div class="col-md-11">
-                <h4>加入我們
+                <h4>聯絡我們
                     <a href="https://www.facebook.com/gundam89412/?modal=admin_todo_tour"><img src="image/logo/fb.png" width="5%" alt=""></a>
                     <a href="https://discord.gg/WQfNUMG"><img src="image/logo/dc.jfif" width="5%" alt=""></a>
                 </h4>

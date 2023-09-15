@@ -11,8 +11,9 @@
     <meta name="generator" content="Hugo 0.88.1">
     <title>新墮落之鄉</title>
 
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="css/buttons.css" />
 
     <link href="css/carousel.css" rel="stylesheet">
@@ -24,16 +25,28 @@
             -moz-user-select: none;
             user-select: none;
         }
-        
+
         .bg-gradient {
             background-image: var(--bs-gradient);
         }
-        
+
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
         }
+        a {
+            text-decoration: none;
+        }
+
+        .fixed-sidebar {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            background-color: #f8f9fa;
+        }
+
         /* Demo page specific styles */
     </style>
 </head>
@@ -44,30 +57,26 @@
 
     <!-- 網頁頂部 -->
     <header>
-        <nav class="navbar navbar-dark fixed-top bg-dark  bg-gradient">
-            <div class="container-fluid">
-                <div id="logo1" class="row">
-
-                    <div id="logo2" class="col-4">
+        <nav class="navbar navbar-dark fixed-top bg-dark bg-gradient">
+            <div class="container-fluid" >
+                <div id="logo1" class="d-flex" style="height: 45px;">
+                    <div id="logo2" class="">
                         <a class="navbar-brand" href="#">
-                            <img src="image/fallen.png" width="125px">
-
+                            <img src="image/fallen.png" width="95px">
                             <span>
-								<img src="image/fallen.png" width="100%" />
-								<br>
-								<h5>墮落之鄉 Minecraft 伺服器</h5>
-							</span>
-
+                                <img src="image/fallen.png" class="w-100"/>
+                            </span>
                         </a>
                     </div>
-                    <div id="logotext" class="col-8">
-                        <h5><br>墮落之鄉 Minecraft 伺服器</h5>
+                    <div id="logotext" class="d-flex justify-content-center align-items-center">
+                        <h5>墮落之鄉 Minecraft 伺服器</h5>
                     </div>
                 </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
@@ -86,39 +95,516 @@
     </header>
 
 
+    <img class="mb-4" src="image/page2.png" width="100%" alt="">
 
-    <main style="padding-top: 6%;">
-        <img class="mb-4" src="image/page2.png" width="100%" alt="">
+    <main class="container">
 
 
 
 
         <!-- link 區 -->
 
-        <div class="container py-2 mb-2 bg-gradient">
+        <div class=" py-2 mb-2 bg-gradient">
             <div class=" row align-items-center">
-                <div class=" col d-flex align-items-left justify-content-center linkhover">
+                <div class=" col-md d-flex align-items-left justify-content-center linkhover">
                     <h2><a class="link-primary" href="index.html">首頁</a></h2>
                 </div>
-                <div class="col d-flex align-items-center justify-content-center">
+                <div class="col-md d-flex align-items-center justify-content-center">
                     <h2>RPG分流介紹</h2>
                 </div>
-                <div class="col d-flex align-items-center justify-content-center linkhover">
+                <div class="col-md d-flex align-items-center justify-content-center linkhover">
                     <h2><a class="link-primary" href="staff.html">開發人員</a></h2>
                 </div>
             </div>
         </div>
 
 
+        <div class="row  py-5 mt-5 bg-secondary bg-gradient bg-opacity-25">
+            <div class="col-md-10">
+                <!-- <iframe src="https://docs.google.com/document/d/e/2PACX-1vQquhGniAvsOUc5teyxnMfCiQNKdT7gLLOoH20t4toq-QcPAYJP_0bNY-v8carOFQAHbef_CWtWpGx7/pub?embedded=true" width="100%" height="100%"></iframe> -->
+
+                <div id="Introduction" class=" text-lg-center mb-5">
+                    <h2><strong>概述</strong></h2>
+                    <h5>相較於其他一般的RPG伺服器，本服較為特別</h5>
+                    <h5>沒有複雜的職業系統，取而代之的是獨特的屬性相剋機制</h5>
+                    <h5>具有獨樹一格的操作系統與武器升級系統</h5>
+
+                    <h5>主要為半開放世界的 <strong class="text-danger">墮落之鄉深淵</strong> 探險模式</h5>
+                    <h5>玩家將一步步向深淵邁進，路途會遇到強大的怪物以及各種危險的路段</h5>
+                    <h5>探險的過程中可以體驗到跑酷、副本、關卡等多種元素</h5>
+                    <h5>而當玩家越深入探險可獲得越強大的武器</h5>
+
+                    <img src="image/rpg/title3.png" class="w-100">
+
+
+                </div>
+
+
+
+                <div id="control" class="">
+                    <h2 class="text-lg-center"><strong>系統介紹</strong></h2>
+                    <div class="row py-3">
+                        <div class="col-md-6">
+                            <h4>操作系統:</h4>
+
+                            <ul class="h5">
+                                <li>技能施放:</li>
+                                <ul>
+                                    <li><strong style="color:blueviolet">數字鍵1:</strong> 可施放對應技能欄位第1格的技能</li>
+                                    <li><strong style="color:blueviolet">數字鍵2:</strong> 可施放對應技能欄位第2格的技能</li>
+                                    <li><strong style="color:blueviolet">數字鍵3:</strong> 可施放對應技能欄位第3格的技能</li>
+                                </ul>
+                            </ul>
+                            <ul class="h5">
+                                <li>固有動作:</li>
+                                <ul>
+                                    <li><strong class="text-primary">滑鼠左鍵:</strong> 揮砍武器</li>
+                                    <li><strong class="text-success">滑鼠右鍵:</strong> 格擋技能，抓準時機可避開攻擊並彈開對方</li>
+                                    <li><strong class="text-danger">F 鍵:</strong> 跳起來後可按此鍵使用二段跳</li>
+                                    <li><strong class="text-info">Shift + 右鍵:</strong> 向前方小幅度衝刺</li>
+                                    <li><strong class="text-info">Shift + F 鍵:</strong>
+                                        主手在武器欄位時可開啟武器更換介面，如果在其他欄位則可開啟伺服器選單</li>
+
+                                </ul>
+                            </ul>
+
+                        </div>
+                        <div class="col-md-6">
+                            <img src="image/slot_img.png" class="img-thumbnail card-img" alt="Responsive image">
+                        </div>
+                        <h5><strong>以上操作只在RPG冒險分流有效，到一般世界後技能欄位會自動清空</strong></h5>
+                        <h4>伺服器選單:</h4>
+                        <div class="m-3 col-md-6 d-flex align-items-center">
+                            
+                            <h5>
+                                選單是非常重要的功能，幾乎所有事務都可以在選單中找到。
+                                <br> 
+                                使用<strong class="text-info">shift + F 鍵</strong>可開啟伺服器選單，也可以使用指令/bs打開
+                            </h5>
+                        </div>
+
+                        <div class="col">
+                            <img src="image/rpg/menu.PNG" class="w-100" alt="">
+                        </div>
+                        
+                        <div class="py-3">
+                            <h4>功能展示:</h4>
+                            <iframe src="https://drive.google.com/file/d/1Q0hHgTCJzdrrCrqE4HjOMSoOe2PF_BIR/preview" width="100%" height="480" allow="autoplay"></iframe>
+                        
+                        </div>
+
+                        
+                        
+                        
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+                <hr>
+                <h4>戰鬥系統:</h4>
+
+                <div class="m-4">
+                    <h5 class="fw-bold"><u>屬性相剋</u></h5>
+            
+                    <div class="row py-2">
+                        <div class="col-md-6">
+                            <h5>每把武器都可以有不同的屬性，如果裝備了火系的武器
+                            自身的屬性就會變成火系，此時被水系的怪物攻擊受到
+                            傷害就會增加，而火系攻擊水系也會導致傷害減低
+                            因此要及時判斷敵人狀況而變更武器</h5>
+                        </div>
+                        <div class="col-md-6">
+                            <table class="table table-bordered bg-light fw-bold">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" style="color:tomato;">⚔️攻擊➪</th>
+                                        <th scope="col" class="text-dark">
+                                            <img src="image/rpg/stone2.png" class="w-25" alt=""> 普通系
+                                        </th>
+                                        <th scope="col" class="text-primary">
+                                            <img src="image/rpg/stone5.png" class="w-25" alt=""> 水系
+                                        </th>
+                                        <th scope="col" class="text-danger">
+                                            <img src="image/rpg/stone3.png" class="w-25" alt=""> 火系
+                                        </th>
+                                        <th scope="col" class="text-success">
+                                            <img src="image/rpg/stone1.png" class="w-25" alt=""> 草系
+                                        </th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="text-dark"><img src="image/rpg/stone2.png" class="w-25" alt=""> 普通系</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-primary"><img src="image/rpg/stone5.png" class="w-25" alt=""> 水系</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td style="color: red;">克制</td>
+                                        <td style="color: lightslategray;">微弱</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-danger"><img src="image/rpg/stone3.png" class="w-25" alt=""> 火系</th>
+                                        <td></td>
+                                        <td style="color: lightslategray;">微弱</td>
+                                        <td></td>
+                                        <td style="color: red;">克制</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-success"><img src="image/rpg/stone1.png" class="w-25" alt=""> 草系</th>
+                                        <td></td>
+                                        <td style="color: red;">克制</td>
+                                        <td style="color: lightslategray;">微弱</td>
+                                        <td></td>
+                                    </tr>
+                                    
+
+                                </tbody>
+                            </table>
+            
+                        </div>
+                    
+                    </div>
+                    <h5 class="fw-bold"><u>攻擊種類</u></h5>
+                    <div class="row">
+                    
+                        <div class="col-md-3">
+                            <h5><strong style="color:darkgreen">命中:</strong> 不同武器的攻擊冷卻時間都不同，攻擊太快導致冷卻未完成就會使傷害不完全</h5>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="image/rpg/hit1.PNG" class="img-thumbnail ">
+                        </div>
+
+                        <div class="col-md-3">
+                            <h5><strong style="color: greenyellow;">打擊:</strong> 武器冷卻完成並攻擊到對手，武器的正常傷害值</h5>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="image/rpg/hit2.PNG" class="img-thumbnail ">
+                        </div>
+
+                        <div class="col-md-3">
+                            <h5><strong style="color: aqua;">重擊:</strong> 武器冷卻完成並攻擊到對手，有機率增加10-15%傷害</h5>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="image/rpg/hit3.PNG" class="img-thumbnail ">
+                        </div>
+
+                        <div class="col-md-3">
+                            <h5><strong style="color: orange;">暴擊:</strong> 傷害額外增加15-30%，發生機率取決於武器的暴擊率數值(可疊加於其他攻擊種類)</h5>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="image/rpg/hit5.PNG" class="img-thumbnail ">
+                        </div>
+
+                        <div class="col-md-3">
+                            <h5><strong style="color: blueviolet;">技術暴擊:</strong> 使用二段跳從空中落下時攻擊對手額外增加傷害</h5>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="image/rpg/hit4.PNG" class="img-thumbnail ">
+                        </div>
+
+                    </div>
+                    <h5 class="fw-bold"><u>特殊掉落物:</u></h5>
+                    <div class="py-3">
+                        <img src="image/rpg/drops.png" style="width: 70%;">
+                    </div>
+                     
+
+                    <h5>擊殺怪物後有機率掉落這些物品，這些掉落物不會被收入背包</h5>
+                    <u><h5>(在本服有防搶怪功能，系統會以玩家造成的傷害去分配掉落物該的擁有者)</h5></u>
+                    <h5><strong style="color: orange;">武器經驗:</strong> 手持的武器尚未滿等撿取後會直接使武器獲得經驗</h5>
+                    <h5><strong style="color: purple;">魔法能量:</strong> 可增加自身魔力值 (魔力值有消耗時)</h5>
+                    <h5><strong style="color: green;">綠色能量:</strong> 可回復血量 (血量有消耗時)</h5>
 
 
 
 
 
-        <div class="container " style="width:100%; height: 1000px;">
 
-            <iframe src="https://docs.google.com/document/d/e/2PACX-1vQquhGniAvsOUc5teyxnMfCiQNKdT7gLLOoH20t4toq-QcPAYJP_0bNY-v8carOFQAHbef_CWtWpGx7/pub?embedded=true" width="100%" height="100%"></iframe>
+
+
+
+                </div>
+                
+
+                <hr>
+                <h4>武器簡介:</h4>
+                <div class="row m-2">
+        
+                    <div class="col-md-6 py-5">
+                        <h5> &nbsp; ▲ 武器升級: 擊殺怪物有機率會獲得武器經驗，經驗累積滿後武器將會升等，升等後會獲得一個武器強化次數，武器強化次數可用於強化武器的數值</h5>
+                        <br>
+                        <h5> &nbsp; ▲ 主動技能: 配備有主動技能的武器在裝備時會自動將技能裝備在前三格技能欄位</h5>
+                        <br>
+                        <h5> &nbsp; ▲ 特殊能力: 通常為武器自帶，通常是攻擊敵人有機率觸發。每種能力觸發機率不一定相同</h5>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <img src="image/rpg/sword_info.PNG" class="img-thumbnail w-75">
+                    </div>
+
+                    <h4>魔力值:</h4>
+                    <div class="col-md-6 py-5">
+                        <h5>在RPG分流中的經驗條代表魔力的數值，在主城分流則為原版的經驗值</h5>
+                        
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <img src="image/rpg/magic.PNG" class="w-75" alt="">
+                       
+                    </div>
+
+                    <div class="col-md-6 py-5">
+                        <h5>使用主動技能皆會消耗魔力值，每種技能的消耗量不盡相同</h5>
+                         
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <img src="image/rpg/skillstone.PNG" class="w-75" alt="">
+                       
+                    </div>
+                    
+
+
+
+
+
+
+                </div>
+
+                <hr>
+                <h4>Rank階級</h4>
+                <div class="m-3">
+                    <h5>Rank是玩家的冒險等級，隨著等級升高能進入的區域能使用的武器愈多樣</h5>
+                    <h5>目前所有的等級為:</h5>
+                    <h4><strong>D -> C -> B -> A -> S</strong></h4>
+                    <h5><strong class="text-danger">武器使用限制:</strong> 等級D的玩家無法使用C包含以上的武器其餘以此類推</h5>
+                    <h5><strong class="text-success">冒險經驗:</strong>  當玩家完成某些任務會獲得經驗，累積到一定的量便會自動提升Rank</h5>
+                </div>
+                
+                
+                <hr>
+                
+
+
+
+                <div id="world" class="">
+                    <h2 class="text-lg-center"><strong>主要區域簡介</strong></h2>
+                    <h3>主世界</h3>
+                    <h5>此區域包含商店區禮包區等等，可提供玩家購買商品升級武器等等</h5>
+
+                    
+                    
+
+                    <div id="myCarousel2" class=" carousel slide w-75 cente" data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="image/rpg/world1.png"  target="_blank"><img class="imgread"
+                                        src="image/rpg/world1.png"  width="100%"></a>
+                            </div>
+                            <div class="carousel-item ">
+                                <a href="image/rpg/world2.png"  target="_blank"><img class="imgread"
+                                        src="image/rpg/world2.png"  width="100%"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="image/rpg/world3.png" target="_blank"><img class="imgread"
+                                        src="image/rpg/world3.png" width="100%"></a>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+
+           
+
+
+
+                <div id="ore" class="">
+                    <h3>資源界</h3>
+                    <h5>此區域為普通生存區，可在此獲得礦物及食物滿足日常需求(無領地保護)</h5>
+
+
+                    <div id="myCarousel3" class=" carousel slide w-75 cente" data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a  target="_blank"><img class="imgread"
+                                        src="image/rpg/ore1.png"  width="100%"></a>
+                            </div>
+                            <div class="carousel-item ">
+                                <a  target="_blank"><img class="imgread"
+                                        src="image/rpg/ore2.png"  width="100%"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a target="_blank"><img class="imgread"
+                                        src="image/rpg/ore3.png" width="100%"></a>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel3"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel3"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+
+
+
+                <div id="build" class="mb-5">
+                    <h3>建築區</h3>
+                    <h5>此區域建築區域，每位玩家都可以領取一張地皮建造自己的家</h5>
+                    <h5>可在領地內飛行與使用紅石與飼養動物<strong class="text-danger">(最大限制150隻)</strong></h5>
+                    <img src="image/rpg/build.png" class="w-100">
+
+
+                </div>
+
+
+                <div id="rpg">
+                    <h3>RPG主線冒險界</h3>
+                    <h5>本服的冒險關卡是由多個空島組成，在每個空島都會有獨立的任務</h5>
+                    <h5>在不同的地方可以尋找到藏寶箱</h5>
+                    <div id="myCarousel1" class=" carousel slide " data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="image/rpg/title1.png"  target="_blank"><img class="imgread"
+                                        src="image/rpg/title1.png"  width="100%"></a>
+                            </div>
+                            <div class="carousel-item ">
+                                <a href="image/rpg/title2.png"  target="_blank"><img class="imgread"
+                                        src="image/rpg/title2.png"  width="100%"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="image/rpg/title4.png" target="_blank"><img class="imgread"
+                                        src="image/rpg/title4.png" width="100%"></a>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+                <div id="pvp">
+                    <h3>PVP世界</h3>
+                    <h5>此區域開放玩家互相對戰且不會噴裝</h5>
+                    <div id="myCarousel4" class=" carousel slide " data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="image/rpg/pvp1.png"  target="_blank"><img class="imgread"
+                                        src="image/rpg/pvp1.png"  width="100%"></a>
+                            </div>
+                            <div class="carousel-item ">
+                                <a href="image/rpg/pvp2.png"  target="_blank"><img class="imgread"
+                                        src="image/rpg/pvp2.png"  width="100%"></a>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel4"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel4"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+            <!-- 導覽列 -->
+            <div class="col" style="position: sticky; top: 100px;">
+                <div class="fw-bolder" style="position: sticky; top: 100px;">
+
+                    <a href="#Introduction" class="list-group-item">簡介</a>
+                    <a href="#control" class="list-group-item">系統介紹</a>
+
+                    <a href="#dashboard-menu" class="list-group-item" data-toggle="collapse" target="menuFrame">區域介紹</a>
+                    <ul id="dashboard-menu" class="collapse bg-light">
+                        <li class="text-black-50">主分流</li>
+                        <li><a href="#world">- 主世界</a></li>
+                        <li><a href="#ore">- 資源界</a></li>
+                        <li><a href="#build">- 建築區</a></li>
+
+                        <li class="text-black-50">RPG冒險分流</li>
+                        <li><a href="#rpg">- 主線冒險界</a></li>
+                        <li><a href="#pvp">- PVP</a></li>
+
+                    </ul>
+
+
+                    <!-- <a href="#dashboard-menu1" class="list-group-item" data-toggle="collapse"
+                        target="menuFrame">關卡介紹</a>
+                    <ul id="dashboard-menu1" class="collapse bg-light">
+                        <li><a href="index.html">- 主線冒險</a></li>
+                        <li><a href="users.html">- 副本</a></li>
+                    </ul> -->
+                </div>
+
+            </div>
+
         </div>
+
+
+
+
     </main>
 
     <!-- FOOTER -->
@@ -126,17 +612,20 @@
 
         <div class="row">
             <div class="col-md-11">
-                <h4>加入我們
-                    <a href="https://www.facebook.com/gundam89412/?modal=admin_todo_tour"><img src="image/logo/fb.png" width="5%" alt=""></a>
+                <h4>聯絡我們
+                    <a href="https://www.facebook.com/gundam89412/?modal=admin_todo_tour"><img src="image/logo/fb.png"
+                            width="5%" alt=""></a>
                     <a href="https://discord.gg/WQfNUMG"><img src="image/logo/dc.jfif" width="5%" alt=""></a>
                 </h4>
 
             </div>
             <div class="col-md-1">
                 <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" fill="currentColor"
+                        class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                    </svg>
                 </a>
             </div>
     </footer>
@@ -147,12 +636,19 @@
 
 
 
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
 
 
 </body>
+<script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
 </html>

@@ -16,6 +16,12 @@
     <link rel="stylesheet" type="text/css" href="css/buttons.css" />
 
     <link href="css/carousel.css" rel="stylesheet">
+
+
+    <!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> -->
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -35,6 +41,12 @@
             }
         }
         /* Demo page specific styles */
+
+
+
+        a {
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -44,47 +56,42 @@
 
     <!-- 網頁頂部 -->
     <header>
-        <nav class="navbar navbar-dark fixed-top bg-dark  bg-gradient">
-            <div class="container-fluid">
-                <div id="logo1" class="row">
-
-                    <div id="logo2" class="col-4">
+        <nav class="navbar navbar-dark fixed-top bg-dark bg-gradient">
+            <div class="container-fluid" >
+                <div id="logo1" class="d-flex" style="height: 45px;">
+                    <div id="logo2" class="">
                         <a class="navbar-brand" href="#">
-                            <img src="image/fallen.png" width="125px">
-
+                            <img src="image/fallen.png" width="95px">
                             <span>
-								<img src="image/fallen.png" width="100%" />
-								<br>
-								<h5>墮落之鄉 Minecraft 伺服器</h5>
-							</span>
-
+                                <img src="image/fallen.png" class="w-100"/>
+                            </span>
                         </a>
                     </div>
-                    <div id="logotext" class="col-8">
-                        <h5><br>墮落之鄉 Minecraft 伺服器</h5>
+                    <div id="logotext" class="d-flex justify-content-center align-items-center">
+                        <h5>墮落之鄉 Minecraft 伺服器</h5>
                     </div>
                 </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">開發人員</a>
+                            <a class="nav-link" aria-current="page" href="RPG.html">RPG分流介紹</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">開發人員</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">首頁</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link " href="RPG.html">RPG分流介紹</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
 
 
     <main style="padding-top: 6%; ">
@@ -111,18 +118,17 @@
 
 
 
-
-
-
+        
 
         <div class="container py-5">
             <div class="row ">
 
-                <div class="col-md-4 py-3 border ">
-                    <img src="image/skin2.png " alt=" ">
+                <div class="col-md-4 py-3 border text-center">
+                    <img id="owner_skin" src="" alt=" ">
                 </div>
                 <div class="col-md-8 py-5 border ">
-                    <h2>伺服主 ID: FallenGundam</h2>
+                    
+                    <h2 id="owner_name">伺服主:&nbsp</h2>
                     <h3 class="text-muted ">伺服器的創始人,主要負責程式撰寫、遊戲規劃
                         <br>關卡設計、怪物設計、武器道具設計、伺服器架設等工作
                     </h3>
@@ -130,17 +136,17 @@
                 </div>
 
 
-                <div class="col-md-4 py-3 border ">
-                    <img src="image/skin1.png " alt=" ">
+                <div class="col-md-4 py-3 border text-center ">
+                    <img id="builder_skin" src="" alt=" ">
                 </div>
                 <div class="col-md-8 py-5 border ">
-                    <h2>建築師 ID: JflaOAO</h2>
+                    <h2 id="builder_name">建築師:&nbsp</h2>
                     <h3 class="text-muted ">主要負責部分關卡設計以及所有建築物與關卡場景</h3>
                 </div>
             </div>
 
             <div class="py-5 " style="height: 300px; ">
-                <h3>聯絡我們</h3>
+                <h3>問題回饋</h3>
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFwwUxCgFmWTKJM6m61zwi3_DSMeXperGLtMwXeomq_IUZlQ/viewform?embedded=true " width="100% " height="100% " frameborder="0 " marginheight="0 " marginwidth="0 ">載入中…</iframe>
             </div>
 
@@ -153,7 +159,7 @@
 
         <div class="row ">
             <div class="col-md-11 ">
-                <h4>加入我們
+                <h4>聯絡我們
                     <a href="https://www.facebook.com/gundam89412/?modal=admin_todo_tour "><img src="image/logo/fb.png " width="5% " alt=" "></a>
                     <a href="https://discord.gg/WQfNUMG "><img src="image/logo/dc.jfif " width="5% " alt=" "></a>
                 </h4>
@@ -170,12 +176,42 @@
     </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+        <script>
+            const ops = ({
+                owner : '3dc18d93-6553-4606-aed4-3f3a92a7c7b2',
+                builder : '86a24022-b660-44c7-9059-48fa48599eb6',
+                
+              });
+
+
+            Object.keys(ops).forEach(element => {
+                
+                document.querySelector(`#${element}_skin`).src = `https://crafatar.com/renders/body/${ops[element]}`
+
+                let api = `https://api.minetools.eu/uuid/${ops[element]}`;
+                axios.get(api)
+                .then(res => {
+                    // console.log('data',res)
+                    let temp = document.querySelector(`#${element}_name`);
+                    let curr2 = temp.innerHTML;
+                    temp.innerHTML = curr2 + res.data.name;
+                    
+                })
+                .catch(err => {
+					console.error(err);
+				});
+            });
+
+
+
+        </script>
 
 
 
 
-
-    <script src="assets/dist/js/bootstrap.bundle.min.js "></script>
 
 
 
