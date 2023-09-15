@@ -13,8 +13,9 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
     <link rel="stylesheet" type="text/css" href="css/buttons.css" />
 
-    <link href="css/default.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/misc.css">
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -23,20 +24,21 @@
             -moz-user-select: none;
             user-select: none;
         }
-        
+
         .bg-gradient {
             background-image: var(--bs-gradient);
         }
-        
+
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
         }
+
         a {
             text-decoration: none;
         }
-        
+
         #video_cover {
             position: absolute;
             width: 100%;
@@ -47,6 +49,7 @@
             background-size: cover;
             background-position: center;
         }
+
         /* Demo page specific styles */
     </style>
 </head>
@@ -64,8 +67,8 @@
         <div class="container">
 
             <div id="code">
-                <span >墮落之鄉，創立於2017年4月因某些原因於2019年2月關閉</span><br />
-                <span >現在，RPG分流已經開放測試!!!</br>
+                <span>墮落之鄉，創立於2017年4月因某些原因於2019年2月關閉</span><br />
+                <span>現在，RPG分流已經開放測試!!!</br>
                 </span>
 
             </div>
@@ -80,13 +83,13 @@
     <!-- 網頁頂部 -->
     <header class="before_display">
         <nav class="navbar navbar-dark fixed-top bg-dark bg-gradient">
-            <div class="container-fluid" >
+            <div class="container-fluid">
                 <div id="logo1" class="d-flex" style="height: 45px;">
                     <div id="logo2" class="">
                         <a class="navbar-brand" href="#">
                             <img src="image/fallen.png" width="95px">
                             <span>
-                                <img src="image/fallen.png" class="w-100"/>
+                                <img src="image/fallen.png" class="w-100" />
                             </span>
                         </a>
                     </div>
@@ -116,7 +119,7 @@
         </nav>
     </header>
 
-    
+
 
     <main class="before_display">
         <img class="mb-4" src="image/page2.png" width="100%" alt="">
@@ -127,14 +130,14 @@
 
             <div class=" py-2 mb-2 bg-gradient">
                 <div class=" row align-items-center">
-                    <div class=" col-md d-flex align-items-left justify-content-center linkhover">
+                    <div class=" col-md d-flex align-items-left justify-content-center">
                         <h2>首頁</h2>
                     </div>
                     <div class="col-md d-flex align-items-center justify-content-center">
-                        <h2><a class="link-primary" href="RPG.html">RPG分流介紹</a></h2>
+                        <h2><a class="link-primary link_effect" href="RPG.html">RPG分流介紹</a></h2>
                     </div>
-                    <div class="col-md d-flex align-items-center justify-content-center linkhover">
-                        <h2><a class="link-primary" href="staff.html">開發人員</a></h2>
+                    <div class="col-md d-flex align-items-center justify-content-center">
+                        <h2><a class="link-primary link_effect" href="staff.html">開發人員</a></h2>
                     </div>
                 </div>
             </div>
@@ -144,16 +147,21 @@
 
 
             <div class="text-center m-5">
-                <a  href="https://www.mc-list.xyz/1399/info" target="_blank"><img src="https://image.mc-list.xyz/banner/1-1399.png" border="0"></a>
+                <a href="https://www.mc-list.xyz/1399/info" target="_blank"><img
+                        src="https://image.mc-list.xyz/banner/1-1399.png" border="0"></a>
 
                 <h4 class="m-3">版本:&nbsp;JAVA 1.16.5 ~ 1.18.2</h4>
-       
+
                 <div class="d-flex align-items-center justify-content-center">
-                    <h3>IP:&nbsp;</h3>
-          
-                    <h3 id="ip" title="點擊可直接複製IP">fallenworld.vigorddns.com</h3>
+                    <h3>IP:&nbsp;&nbsp;</h3>
+
+                    <h3 id="ip">
+                        <span id="iptext">fallenworld.vigorddns.com</span>
+                        <span class="tooltip-text">點擊可直接複製IP</span>
+                    </h3>
+
                 </div>
-               
+
 
                 <h4 class="py-5 text-muted"><strong>墮落之鄉</strong>成立於2017年的4月,當時只是一時興起將伺服器發佈到論壇
                     </br>沒想到卻吸引到很多玩家來遊玩,之後規模愈做愈大,在2018年的暑假
@@ -181,30 +189,38 @@
                 <div class="col-md-8">
                     <div id="myCarousel" class="p-md-4 p-5 container carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <a href="image/pica1.png" target="_blank"><img class="imgread" src="image/pica1.png" width="100%"></a>
+                                <a href="image/pica1.png" target="_blank"><img class="imgread" src="image/pica1.png"
+                                        width="100%"></a>
                             </div>
                             <div class="carousel-item ">
-                                <a href="image/pica2.png" target="_blank"><img class="imgread" src="image/pica2.png" width="100%"></a>
+                                <a href="image/pica2.png" target="_blank"><img class="imgread" src="image/pica2.png"
+                                        width="100%"></a>
                             </div>
                             <div class="carousel-item ">
-                                <a href="image/pica3.png" target="_blank"><img class="imgread" src="image/pica3.png" width="100%"></a>
+                                <a href="image/pica3.png" target="_blank"><img class="imgread" src="image/pica3.png"
+                                        width="100%"></a>
                             </div>
 
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
 
 
@@ -223,27 +239,35 @@
                 <div class="col-md-8 order-md-1">
                     <div id="myCarousel1" class="p-md-4 p-5 container carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#myCarousel1" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <a href="image/picb1.png" target="_blank"><img class="imgread" src="image/picb1.png" width="100%"></a>
+                                <a href="image/picb1.png" target="_blank"><img class="imgread" src="image/picb1.png"
+                                        width="100%"></a>
                             </div>
                             <div class="carousel-item ">
-                                <a href="image/picb2.png" target="_blank"><img class="imgread" src="image/picb2.png" width="100%"></a>
+                                <a href="image/picb2.png" target="_blank"><img class="imgread" src="image/picb2.png"
+                                        width="100%"></a>
                             </div>
                             <div class="carousel-item">
-                                <a href="image/picb3.png" target="_blank"><img class="imgread" src="image/picb3.png" width="100%"></a>
+                                <a href="image/picb3.png" target="_blank"><img class="imgread" src="image/picb3.png"
+                                        width="100%"></a>
                             </div>
 
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel1" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel1" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel1"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -260,7 +284,10 @@
 
                 </div>
                 <div class="col-md-8">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/iqhxhHVK9rY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/iqhxhHVK9rY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -274,21 +301,27 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="container bg-dark text-white py-5">
+    <footer class="container bg-dark text-white py-5 ">
 
-        <div class="row">
-            <div class="col-md-11">
+        <div class="row ">
+            <div class="col-md-11 ">
                 <h4>聯絡我們
-                    <a href="https://www.facebook.com/gundam89412/?modal=admin_todo_tour"><img src="image/logo/fb.png" width="5%" alt=""></a>
-                    <a href="https://discord.gg/WQfNUMG"><img src="image/logo/dc.jfif" width="5%" alt=""></a>
+                    <a href="https://www.facebook.com/gundam89412/?modal=admin_todo_tour ">
+                        <img class="logo_effect" src="image/logo/fb.png " alt=" ">
+                    </a>
+                    <a href="https://discord.gg/WQfNUMG ">
+                        <img class="logo_effect" src="image/logo/dc.jfif " alt=" ">
+                    </a>
                 </h4>
 
             </div>
-            <div class="col-md-1">
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-                      </svg>
+            <div class="col-md-1 ">
+                <a href="# ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="50px " fill="currentColor "
+                        class=" logo_effect bi bi-arrow-up-square " viewBox="0 0 16 16 ">
+                        <path fill-rule="evenodd " d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5
+                                0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z " />
+                    </svg>
                 </a>
             </div>
     </footer>
@@ -310,7 +343,7 @@
 
         } else {
             document.getElementById("code").typewriter();
-            setTimeout(function() {
+            setTimeout(function () {
                 $("#code").slideUp(500);
                 $("#video_cover").fadeIn(2000);
                 $("#enter").fadeIn(3000);
@@ -318,9 +351,9 @@
             }, 7500);
             // container隐藏
 
-            $("#enter").click(function() {
+            $("#enter").click(function () {
                 $("#container").slideUp(500);
-                setTimeout(function() {
+                setTimeout(function () {
                     sessionStorage.setItem('access', true); //刷新可略過開場
                     $(".before_display").fadeIn('slow');
                     $("html").css("overflow", "auto");
@@ -329,18 +362,13 @@
             })
         }
 
-        $("#ip").click(function() {
-            copyEvent("ip");
-
+        $("#ip").click(function () {
+            copyEvent('iptext')
         })
 
-
-
-
-
-
         function copyEvent(id) {
-            var str = document.getElementById(id);
+
+            let str = document.getElementById(id);
             window.getSelection().selectAllChildren(str);
             document.execCommand("Copy")
         }
