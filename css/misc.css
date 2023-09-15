@@ -1,0 +1,135 @@
+
+#logo1 {
+    position: relative;
+    height: 80px;
+    width: 30%;
+}
+
+#logotext {
+    color: white;
+    font-size: 100%;
+}
+
+.before_display {
+    display: none;
+}
+
+#logo2 span {
+    position: fixed;
+    padding: 5px;
+    width: 40%;
+    border: 1px solid gray;
+    visibility: hidden;
+    background-color: #131212;
+}
+
+#logo2:hover {
+    background-color: transparent;
+}
+
+#logo2:hover span {
+    visibility: visible;
+    top: 0;
+    left: 40px;
+}
+
+
+
+.linkhover:hover {
+    cursor: pointer;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-color: aqua;
+}
+
+
+#ip{
+    display: block; 
+    transition: transform 0.3s; 
+    position: relative;
+    cursor: pointer;
+}
+#ip .tooltip-text {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px; /* 更改字体大小 */
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+
+#ip:hover {
+    cursor: pointer;
+    color: greenyellow;
+    transform: scale(1.07); 
+}
+#ip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* .custom-tooltip {
+    position: relative;
+    cursor: pointer;
+} */
+/* 
+.custom-tooltip .tooltip-text {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px; 更改字体大小
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.custom-tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+} */
+
+
+
+
+.imgread:hover {
+    cursor: zoom-in;
+}
+
+.logo_effect {
+    width: 50px;
+}
+
+.logo_effect:hover {
+    transform: scale(1.2); /* 放大10% */
+    transition: transform 0.2s; /* 添加过渡动画效果 */
+}
+a {
+    text-decoration: none;
+}
+.link_effect{
+    display: inline-block; /* 或者 display: block; */
+    transition: transform 0.2s; /* 添加过渡动画效果 */
+}
+
+.link_effect:hover{
+    color: aqua;
+    transform: scale(1.1); /* 放大10% */
+}
